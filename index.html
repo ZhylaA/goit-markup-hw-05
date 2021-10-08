@@ -72,7 +72,9 @@
       <section class="heading">
         <div class="container heading-container">
           <h1 class="title-heading">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="heading-btn btn">Заказать услугу</button>
+          <button type="button" class="heading-btn btn" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <section class="advantage">
@@ -428,5 +430,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="icon-close" data-modal-close>
+          <svg class="" width="11" height="11">
+            <use class="close" href="./images/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
