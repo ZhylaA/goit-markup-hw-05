@@ -28,11 +28,11 @@ img {
   --white-color: #ffffff;
   --color-soc: #afb1b8;
   --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
-  --time-duration: 250ms;
+  --time-duration: 1250ms;
 }
-.body {
+body {
   color: var(--basic-color);
-  background-color: --white-color;
+  background-color: var(--white-color);
   font-family: roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -102,9 +102,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--basic-color);
-  transition-property: color;
-  transition-duration: -var(--time-duration);
-  transition-timing-function: var(--cubic-bezier);
+  transition: color var(--time-duration) var(--cubic-bezier);
 }
 
 .header-contacts-list {
@@ -122,9 +120,7 @@ img {
   align-items: center;
   justify-content: center;
   fill: currentColor;
-  transition-property: color;
-  transition-duration: var(--time-duration);
-  transition-timing-function: var(--cubic-bezier);
+  transition: color var(--time-duration) var(--cubic-bezier);
 }
 
 .header-contacts-icon {
@@ -216,9 +212,8 @@ img {
   letter-spacing: 0.06em;
   color: var(--white-color);
   background-color: var(--blue-color);
-  transition-property: color, background-color;
-  transition-duration: var(--time-duration);
-  transition-timing-function: var(--cubic-bezier);
+  transition: color var(--time-duration) var(--cubic-bezier),
+    background-color var(--time-duration) var(--cubic-bezier);
 }
 .heading-btn:hover {
   color: var(--blue-color);
@@ -383,9 +378,8 @@ img {
   align-items: center;
   justify-content: center;
   color: var(--color-soc);
-  transition-property: color, fill;
-  transition-duration: var(--time-duration);
-  transition-timing-function: var(--cubic-bezier);
+  transition: color var(--time-duration) var(--cubic-bezier),
+    fill var(--time-duration) var(--cubic-bezier);
 }
 .social-link:hover,
 .social-link:focus {
@@ -424,11 +418,6 @@ img {
   align-items: center;
   fill: var(--color-soc);
 }
-
-/* .clients-link {
-  width: 100%;
-  height: 100%;
-} */
 .clients-item + .clients-item {
   margin-left: 30px;
 }
@@ -522,9 +511,8 @@ img {
 .footer-social-link {
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--white-color);
-  transition-property: color, fill;
-  transition-duration: var(--time-duration);
-  transition-timing-function: var(--cubic-bezier);
+  transition: color var(--time-duration) var(--cubic-bezier),
+    fill var(--time-duration) var(--cubic-bezier);
 }
 
 .footer-social-link:focus .social-icon,
@@ -544,7 +532,6 @@ img {
   flex-direction: row;
   justify-content: center;
   margin-bottom: 50px;
-  margin-top: 100px;
 }
 .portfolio-item:not(:last-child) {
   margin-right: 8px;
@@ -570,9 +557,8 @@ img {
   letter-spacing: 0.03em;
   color: var(--basic-color);
   background-color: #f5f4fa;
-  transition-property: color, background-color;
-  transition-duration: var(--time-duration);
-  transition-timing-function: var(--cubic-bezier);
+  transition: color var(--time-duration) var(--cubic-bezier),
+    background-color var(--time-duration) var(--cubic-bezier);
 }
 
 .btn {
