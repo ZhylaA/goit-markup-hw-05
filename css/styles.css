@@ -102,7 +102,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--basic-color);
-  transition: color var(--time-duration) var(--cubic-bezier);
+  transition: color var(--time-duration) var(--cubic-bezier),
+    fill var(--time-duration) var(--cubic-bezier);
 }
 
 .header-contacts-list {
@@ -111,6 +112,8 @@ body {
 
 .header-contacts-item {
   margin-right: 30px;
+  transition: color var(--time-duration) var(--cubic-bezier),
+    fill var(--time-duration) var(--cubic-bezier);
 }
 .header-contacts-link {
   font-weight: 500;
@@ -120,12 +123,15 @@ body {
   align-items: center;
   justify-content: center;
   fill: currentColor;
-  transition: color var(--time-duration) var(--cubic-bezier);
+  transition: color var(--time-duration) var(--cubic-bezier),
+    fill var(--time-duration) var(--cubic-bezier);
 }
 
 .header-contacts-icon {
   fill: var(--secondary-color);
   margin-right: 10px;
+  transition: color var(--time-duration) var(--cubic-bezier),
+    fill var(--time-duration) var(--cubic-bezier);
 }
 .header-contacts-list .header-contacts-link:hover .header-contacts-icon,
 .header-contacts-list .header-contacts-link:focus .header-contacts-icon {
@@ -379,7 +385,8 @@ body {
   justify-content: center;
   color: var(--color-soc);
   transition: color var(--time-duration) var(--cubic-bezier),
-    fill var(--time-duration) var(--cubic-bezier);
+    fill var(--time-duration) var(--cubic-bezier),
+    background-color var(--time-duration) var(--cubic-bezier);
 }
 .social-link:hover,
 .social-link:focus {
@@ -426,6 +433,8 @@ body {
   height: 60px;
   display: flex;
   fill: var(--color-soc);
+  transition: fill var(--time-duration) var(--cubic-bezier),
+    border-color var(--time-duration) var(--cubic-bezier);
 }
 .clients-link {
   display: flex;
@@ -435,7 +444,8 @@ body {
   height: 92px;
   border: 1px solid var(--secondary-color);
   border-radius: 4px;
-  transition: fill var(--time-duration) var(--cubic-bezier);
+  transition: fill var(--time-duration) var(--cubic-bezier),
+    border-color var(--time-duration) var(--cubic-bezier);
 }
 .clients-link:hover,
 .clients-link:focus {
@@ -512,7 +522,8 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--white-color);
   transition: color var(--time-duration) var(--cubic-bezier),
-    fill var(--time-duration) var(--cubic-bezier);
+    fill var(--time-duration) var(--cubic-bezier),
+    background-color var(--time-duration) var(--cubic-bezier);
 }
 
 .footer-social-link:focus .social-icon,
@@ -613,7 +624,7 @@ body {
 
 .examples-text {
   font-size: 18px;
-  line-height: calc (28 / 18);
+  line-height: 1.56;
   letter-spacing: 0.03em;
   padding: 63px 24px;
   background: rgba(33, 150, 243, 0.9);
@@ -649,6 +660,7 @@ body {
   width: 530px;
   height: 580px;
   border-radius: 4px;
+
   background-color: var(--white-color);
 }
 
